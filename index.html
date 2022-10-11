@@ -8,47 +8,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h3>Калькулятор Кокаина</h3>
+   <h3>Калькулятор Кокаина</h3>
     <section class="computer">
         <div class="display-wrapper">
             <div class="display">
-                <form name="form">
-                    <input type="text" name="textview" readonly>
-                </form>
+                    0
             </div>
             <button class="clear" type="button">Выключить</button>
         </div>
         
     </section>
     <section class="keyboard">
-        <div>
+       <div>
             <div class="keyboard-line">
-                <button class="button key" onclick="insert('7')">7</button>
-                <button class="button key" onclick="insert('8')">8</button>
-                <button class="button key" onclick="insert('9')">9</button>
-                <button class="button key" onclick="insert('/')">÷</button>
-                <button class="button key" onclick="clean()">C</button>
+                <div class="button key" onclick="insert('7')">7</div>
+                <div class="button key" onclick="insert('8')">8</div>
+                <div class="button key" onclick="insert('9')">9</div>
+                <div class="button key signs" onclick="insert('/')">÷</div>
+                <div class="button key" onclick="clean()">C</div>
             </div>
             <div class="keyboard-line">
-                <button class="button key" onclick="insert('4')">4</button>
-                <button class="button key" onclick="insert('5')">5</button>
-                <button class="button key" onclick="insert('6')">6</button>
-                <button class="button key" onclick="insert('*')">×</button>
-                <button class="button key smooth" onclick="smooth()">=</button>
+                <div class="button key" onclick="insert('4')">4</div>
+                <div class="button key" onclick="insert('5')">5</div>
+                <div class="button key" onclick="insert('6')">6</div>
+                <div class="button key signs" onclick="signs('*')">×</div>
+                <div class="button key smooth" onclick="smooth()">=</div>
             </div>
             <div class="keyboard-line">
-                <button class="button key" onclick="insert('1')">1</button>
-                <button class="button key" onclick="insert('2')">2</button>
-                <button class="button key" onclick="insert('3')">3</button>
-                <button class="button key" onclick="insert('-')">-</button>
+                <div class="button key" onclick="insert('1')">1</div>
+                <div class="button key" onclick="insert('2')">2</div>
+                <div class="button key" onclick="insert('3')">3</div>
+                <div class="button key signs" onclick="signs('-')">-</div>
             </div>
             <div class="keyboard-line">
-                <button class="button key" onclick="insert('0')">0</button>
-                <button class="button key" onclick="insert('')">±</button>
-                <button class="button key" onclick="insert('.')">.</button>
-                <button class="button key" onclick="insert('+')">+</button>
-            </div>
-            
+                <div class="button key" onclick="insert('0')">0</div>
+                <div class="button key" onclick="insert('')">±</div>
+                <div class="button key" onclick="signs('.')">.</div>
+                <div class="button key signs" onclick="signs('+')">+</div>
+            </div> 
         </div>
         
     </section>
