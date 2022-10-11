@@ -1,17 +1,29 @@
+let display = document.querySelector('.display');
+
 function insert (num){
-    document.form.textview.value = document.form.textview.value + num;
+    if (display.textContent == 0){
+        display.textContent = "";
+        
+        display.textContent = display.textContent + num;
+    } else{
+    display.textContent = display.textContent + num;
+    }
 
 };
+function signs (num){
+    if (display.textContent != 0){
+        display.textContent = display.textContent + num;    
+    } 
+};
 function clean (){
-    document.form.textview.value = ""
+    display.textContent = "0"
 };
 function smooth () {
-    let i = document.form.textview.value;
+    let i = display.textContent;
     if (i){
-        document.form.textview.value = eval(i);
+        display.textContent = eval(i);
         if (eval(i) > 10000){
             alert('Слишком дорого братан');
         }
     }
 };
-
