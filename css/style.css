@@ -15,7 +15,7 @@ body{
   padding: 10px;
   font-weight: bold;
   border-top: 10px solid #55c49f;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 #dayOfWeek
 {
@@ -67,11 +67,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-.clear{
+/* .clear{
     position: absolute;
     bottom: 2px;
     right: 2px;
-}
+} */
 .keyboard-line{
     display: grid;
     justify-content: space-between;
